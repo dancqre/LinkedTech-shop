@@ -1,0 +1,9 @@
+@import './vars.scss';
+@import './reset';
+@import './blocks/header';
+
+.container{
+	width: 1236px;
+	margin: 0 auto;
+	font-family: var(--main-font);
+}
