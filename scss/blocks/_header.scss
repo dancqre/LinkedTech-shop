@@ -1,4 +1,5 @@
 /////////////////////NAV//////////
+
 .header__nav {
 	padding-top: 32px;
 	margin-bottom: 85px;
@@ -21,12 +22,17 @@
 	gap:8px;
 }
 
+
 .shops {
 	display: flex;
 	gap:30px;
 	align-items: center;
 
 }
+
+/////////////////////NAV//////////
+
+
 
 .header__row {
 	display: flex;
@@ -59,6 +65,7 @@
 
 .header__span {
 	color:#247CC0;
+	font-weight: 600;
 }
 
 .header__title-about {
@@ -100,5 +107,9 @@
 	display: flex;
 	gap:84px;
 	justify-content: center;
-	margin-bottom: 76px;
+	padding-bottom: 76px;
+	box-shadow: 0px -1.73968px 1.20532px 0px rgba(174, 174, 174, 0.02), 0px 0.19008px 4.14347px 0px rgba(174, 174, 174, 0.03), 0px 6.77214px 9.61331px 0px rgba(174, 174, 174, 0.04), 0px 19.8401px 19.14056px 0px rgba(174, 174, 174, 0.05), 0px 43.751px 36.44142px 0px rgba(174, 174, 174, 0.06), 0px 100px 80px 0px rgba(174, 174, 174, 0.08);
+}
+.header{
+	margin-bottom: 130px;
 }
