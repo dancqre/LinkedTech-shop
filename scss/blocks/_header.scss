@@ -47,11 +47,7 @@
 
 .header__about-top {
 	margin-top:75px;
-	font-weight: 500;
-	font-size: 16px;
-	color: #C72535;
-	letter-spacing: 2.32px;
-	text-transform: uppercase;
+	@include saleText(16px);
 }
 
 .header__title {
