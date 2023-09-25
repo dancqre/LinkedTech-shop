@@ -452,6 +452,7 @@ legend {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+  margin-bottom: 55px;
 }
 
 .buy__item {
@@ -471,8 +472,12 @@ legend {
 }
 
 .img__item {
+  width: 250px;
+  height: 250px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-left: 15%;
 }
 
 .hover__nav {
@@ -493,8 +498,74 @@ legend {
   padding: 0 35px 30px;
 }
 
-.price-wrapper {
+.price-wrapper2 {
   padding: 0 35px;
+}
+
+.linker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 145px;
+}
+
+.linker a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new__shop-above {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #C72535;
+  letter-spacing: 2.32px;
+  text-transform: uppercase;
+}
+
+.new__shop-title {
+  display: flex;
+  justify-content: center;
+  color: var(--main-color);
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.new__shop-undertitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.gallery__img-about {
+  display: flex;
+  justify-content: center;
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.gallery {
+  margin-bottom: 130px;
+}
+
+.gallery_wrapper {
+  display: flex;
+  gap: 50px;
 }
 
 .container {

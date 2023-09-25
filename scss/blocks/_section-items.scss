@@ -46,6 +46,8 @@
 	display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 	gap: 30px;
+	
+	margin-bottom: 55px;
 }
 
 .buy__item{
@@ -64,8 +66,12 @@
 	padding: 35px 35px;
 }
 .img__item{
+	width: 250px;
+	height: 250px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	margin-left:15%;
 }
 .buy__item-img {
 
@@ -90,6 +96,24 @@
 .stars {
 	padding: 0 35px 30px;
 }
-.price-wrapper {
+.price-wrapper2 {
 	padding: 0 35px;
+}
+.linker{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:10px;
+
+	color: var(--main-color);
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	margin-bottom: 145px;
+}
+.linker a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
