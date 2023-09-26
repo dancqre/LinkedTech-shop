@@ -49,11 +49,15 @@
 	display: flex;
 	gap:50px;
 }
-.gallery__img {
-
+.iphone__img{
+	width: 360px;
+	height: 490px;
 }
-
-
-.third__gallery-row {
-
+.gallery__img-advantages{
+	opacity: 0.6;
+}
+.gallery__img-advantages{
+	margin-top:30px;
+	display: flex;
+	text-align: center;
 }

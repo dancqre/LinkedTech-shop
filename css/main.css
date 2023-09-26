@@ -568,6 +568,21 @@ legend {
   gap: 50px;
 }
 
+.iphone__img {
+  width: 360px;
+  height: 490px;
+}
+
+.gallery__img-advantages {
+  opacity: 0.6;
+}
+
+.gallery__img-advantages {
+  margin-top: 30px;
+  display: flex;
+  text-align: center;
+}
+
 .contact {
   background: var(--e-6-edf-2, #F4F9FC);
 }
@@ -641,12 +656,83 @@ legend {
   display: flex;
 }
 
-body {
-  background: black;
+.footer {
+  background: #030D15;
+  color: white;
+}
+
+.footer__wrapper {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 56px;
+}
+
+.logo__about {
+  font-size: 14px;
+  font-weight: 400;
+  width: 260px;
+}
+
+.footer__logo {
+  margin-bottom: 22px;
+}
+
+.footer__info {
+  max-width: 260px;
+}
+
+.footer__ul__li-title {
+  margin-bottom: 26px;
+}
+
+.footer__ul-li {
+  margin-bottom: 15px;
+}
+
+.footer__icons-line {
+  display: flex;
+  align-items: center;
+  transform: translateY(18%);
+  color: white;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 25px;
+}
+
+.footer__language {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
   width: 1236px;
   margin: 0 auto;
   font-family: var(--main-font);
+}
+
+a {
+  transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  border-bottom: 2px solid rgb(73, 142, 240);
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover {
+  color: rgb(234, 160, 236);
+}
+
+a:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
