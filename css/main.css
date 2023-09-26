@@ -568,6 +568,83 @@ legend {
   gap: 50px;
 }
 
+.contact {
+  background: var(--e-6-edf-2, #F4F9FC);
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contant__first-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__above {
+  font-weight: 500;
+  font-size: 14px;
+  color: #C72535;
+  letter-spacing: 2.32px;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+.contact__title {
+  color: var(--main-color);
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.contact__text {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  max-width: 360px;
+  opacity: 0.6;
+  padding-bottom: 100px;
+}
+
+.sumbit__btn {
+  padding: 13px 26px 14px 27px;
+  background: #247CC0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.subcribe__form__input {
+  padding: 15px 162px 14px 26px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.subcribe__form__input::-moz-placeholder {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  opacity: 0.4;
+}
+
+.subcribe__form__input::placeholder {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  opacity: 0.4;
+}
+
+.form__contact {
+  display: flex;
+}
+
+body {
+  background: black;
+}
+
 .container {
   width: 1236px;
   margin: 0 auto;

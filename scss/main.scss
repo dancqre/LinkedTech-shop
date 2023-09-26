@@ -4,7 +4,12 @@
 @import './blocks/section-main';
 @import './blocks/section-items';
 @import './blocks/section-newShop';
+@import './blocks/section-contact';
+@import './blocks/section-footer';
 
+body{
+	background: black;
+}
 .container{
 	width: 1236px;
 	margin: 0 auto;
