@@ -5,12 +5,9 @@ const list  = document.querySelectorAll('.filter-li');
 
 list.forEach((li) => {
   li.addEventListener('click', function () {
-    // Видаляємо клас "activated" у всіх кнопок
     list.forEach((btn) => {
       btn.classList.remove('activated');
     });
-
-    // Додаємо клас "activated" тільки до натиснутої кнопки
     this.classList.add('activated');
   });
 });
