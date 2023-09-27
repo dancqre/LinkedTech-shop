@@ -99,6 +99,11 @@ button:active {
   outline: none;
 }
 
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -706,33 +711,4 @@ legend {
   display: flex;
   align-items: center;
   text-align: center;
-}
-
-.container {
-  width: 1236px;
-  margin: 0 auto;
-  font-family: var(--main-font);
-}
-
-a {
-  transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in;
-  position: relative;
-}
-
-a::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  border-bottom: 2px solid rgb(73, 142, 240);
-  transition: width 0.3s ease-in-out;
-}
-
-a:hover {
-  color: rgb(234, 160, 236);
-}
-
-a:hover::after {
-  width: 100%;
 }/*# sourceMappingURL=main.css.map */
