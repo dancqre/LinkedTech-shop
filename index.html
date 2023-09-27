@@ -157,16 +157,18 @@
 		<div class="container">
 			<p class="new__product-about">New Products</p>
 			<h3 class="popular__title">Popular Products</h3>
+		  <nav class="filter">
 			<ul class="filter__list">
-				<li class="filter-li activated">Recent arrival</li>
-				<li class="filter-li">best sellers</li>
-				<li class="filter-li">special offers</li>
-				<li class="filter-li">featured in</li>
+				<li data-f="resent" class="filter-li activated">Recent arrival</li>
+				<li data-f="best" class="filter-li">best sellers</li>
+				<li data-f="special" class="filter-li">special offers</li>
+				<li data-f="featured" class="filter-li">featured in</li>
 			</ul>
+		  </nav>
 			<div class="items__grid">
-				<div class="buy__item">
+				<div class="buy__item resent best">
 					<p class="buy__item-about">Get up to 10% off Today Only!</p>
-					<div class="img__item"><img src="./img/images/buy1.png" class="buy__item-img" alt=""></div>			
+					<div class="img__item"><img src="./img/images/buy1.png" class="buy__item-img zoom" alt=""></div>			
 					<ul class="hover__nav none">
 						<li class="hover__nav-img"><img src="./img/icons/buy1logo.svg" alt=""></li>
 						<li class="hover__nav-img"><img src="./img/icons/buy2logo.svg" alt=""></li>
@@ -180,9 +182,9 @@
 					</div>
 					<div class="stars"><img src="./img/icons/stars.svg" alt=""></div>				
 				</div>
-				<div class="buy__item">
+				<div class="buy__item resent special">
 					<p class="buy__item-about">Get up to 30% off Today Only!</p>
-					<div class="img__item"><img src="./img/images/buy2.png" class="buy__item-img" alt=""></div>
+					<div class="img__item"><img src="./img/images/buy2.png" class="buy__item-img zoom" alt=""></div>
 					<ul class="hover__nav none">
 						<li class="hover__nav-img"><img src="./img/icons/buy1logo.svg" alt=""></li>
 						<li class="hover__nav-img"><img src="./img/icons/buy2logo.svg" alt=""></li>
@@ -196,9 +198,9 @@
 					</div>
 					<div class="stars"><img src="./img/icons/stars.svg" alt=""></div>
 				</div>
-				<div class="buy__item">
+				<div class="buy__item resent special">
 					<p class="buy__item-about">Get up to 10% off Today Only!</p>
-					<div class="img__item"><img src="./img/images/buy3.png" class="buy__item-img" alt=""></div>
+					<div class="img__item"><img src="./img/images/buy3.png" class="buy__item-img zoom" alt=""></div>
 					<ul class="hover__nav none">
 						<li class="hover__nav-img"><img src="./img/icons/buy1logo.svg" alt=""></li>
 						<li class="hover__nav-img"><img src="./img/icons/buy2logo.svg" alt=""></li>
@@ -212,9 +214,9 @@
 					</div>
 					<div class="stars"><img src="./img/icons/stars.svg" alt=""></div>
 				</div>
-				<div class="buy__item">
+				<div class="buy__item resent best">
 					<p class="buy__item-about">Get up to 35% off Today Only!</p>
-					<div class="img__item"><img src="./img/images/buy1.png" class="buy__item-img" alt=""></div>
+					<div class="img__item"><img src="./img/images/buy1.png" class="buy__item-img zoom" alt=""></div>
 					<ul class="hover__nav none">
 						<li class="hover__nav-img"><img src="./img/icons/buy1logo.svg" alt=""></li>
 						<li class="hover__nav-img"><img src="./img/icons/buy2logo.svg" alt=""></li>
@@ -228,9 +230,9 @@
 					</div>
 					<div class="stars"><img src="./img/icons/stars.svg" alt=""></div>
 				</div>
-				<div class="buy__item">
+				<div class="buy__item resent special featured best">
 					<p class="buy__item-about">Get up to 10% off Today Only!</p>
-					<div class="img__item"><img src="./img/images/buy5.png" class="buy__item-img" alt=""></div>
+					<div class="img__item"><img src="./img/images/buy5.png" class="buy__item-img zoom" alt=""></div>
 					<ul class="hover__nav none">
 						<li class="hover__nav-img"><img src="./img/icons/buy1logo.svg" alt=""></li>
 						<li class="hover__nav-img"><img src="./img/icons/buy2logo.svg" alt=""></li>
@@ -244,9 +246,9 @@
 					</div>
 					<div class="stars"><img src="./img/icons/stars.svg" alt=""></div>
 				</div>
-				<div class="buy__item">
+				<div class="buy__item resent best">
 					<p class="buy__item-about">Get up to 10% off Today Only!</p>
-					<div class="img__item"><img src="./img/images/buy6.png" class="buy__item-img" alt=""></div>
+					<div class="img__item"><img src="./img/images/buy6.png" class="buy__item-img zoom" alt=""></div>
 					<ul class="hover__nav none">
 						<li class="hover__nav-img"><img src="./img/icons/buy1logo.svg" alt=""></li>
 						<li class="hover__nav-img"><img src="./img/icons/buy2logo.svg" alt=""></li>
@@ -296,7 +298,7 @@
 					</div>
 					<div class="gallery-img">
 						<p class="gallery__img-about">IPHONE 14 PRO</p>
-						<img src="./img/images/3galleryphone.png" class="iphone__img" alt="">
+						<img src="./img/images/3galleryphone.png " class="iphone__img" alt="">
 						<p class="gallery__img-advantages">
 							Screen (6.1", OLED (Super Retina XDR), 2556x1179) / Apple A16 Bionic / main quad camera: 48 MP +
 							12 MP + 12 MP + 12 MP,

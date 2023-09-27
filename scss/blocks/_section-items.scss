@@ -28,7 +28,9 @@
 
 	margin-bottom: 50px;
 }
-
+.filter-li {
+	cursor: pointer;
+}
 .activated{
 	color: #C72535;
 	opacity: 1 !important;
@@ -39,14 +41,15 @@
 	font-weight: 600;
 }
 .items__grid {
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 	
 	margin-bottom: 55px;
 }
 
 .buy__item{
+	flex-basis: calc(31.33%);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

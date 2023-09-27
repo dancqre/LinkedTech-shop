@@ -155,6 +155,32 @@ legend {
   fill: rgb(234, 160, 236);
 }
 
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.hide {
+  display: none !important;
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
 .header__nav {
   padding-top: 32px;
   margin-bottom: 85px;
@@ -480,6 +506,10 @@ legend {
   margin-bottom: 50px;
 }
 
+.filter-li {
+  cursor: pointer;
+}
+
 .activated {
   color: #C72535;
   opacity: 1 !important;
@@ -492,13 +522,14 @@ legend {
 }
 
 .items__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 55px;
 }
 
 .buy__item {
+  flex-basis: 31.33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -602,8 +633,17 @@ legend {
   margin-bottom: 15px;
 }
 
+.swiper-wrapper {
+  display: flex;
+}
+
 .gallery {
   margin-bottom: 130px;
+}
+
+.gallery__swiper {
+  display: flex;
+  overflow: hidden;
 }
 
 .gallery_wrapper {

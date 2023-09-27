@@ -42,8 +42,16 @@
 
 	margin-bottom: 15px;
 }
+.swiper-wrapper{
+	display: flex;
+}
+
 .gallery{
 	margin-bottom: 130px;
+}
+.gallery__swiper{
+	display: flex;
+	overflow: hidden;
 }
 .gallery_wrapper{
 	display: flex;
