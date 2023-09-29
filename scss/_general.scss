@@ -49,7 +49,9 @@
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
 }
-
+.activatedB{
+	height: 60vh !important;
+}
 @keyframes a1{
 	to {
 		opacity: 0;

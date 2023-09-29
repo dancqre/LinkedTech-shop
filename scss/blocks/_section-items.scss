@@ -85,6 +85,9 @@
 	padding: 0 35px;
 }
 .stars {
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
 	padding: 0 35px 30px;
 }
 .price-wrapper2 {
@@ -107,4 +110,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.buy__btn{
+	color:white;
+	border: rgb(3, 3, 3) 1.5px solid;
+	border-radius: 10%;
+	padding: 0 20px;
+	background-color: rgb(211, 211, 211);
+	transition: all 1s ease;
+}
+.buy__btn:hover{
+	background-color: white;
+	color:  black;
 }

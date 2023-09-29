@@ -171,6 +171,10 @@ legend {
   animation-fill-mode: forwards;
 }
 
+.activatedB {
+  height: 60vh !important;
+}
+
 @keyframes a1 {
   to {
     opacity: 0;
@@ -203,6 +207,7 @@ legend {
 }
 
 .shops {
+  position: relative;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -252,6 +257,7 @@ legend {
 }
 
 .header__btn {
+  color: white;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -290,6 +296,25 @@ legend {
 
 .header {
   margin-bottom: 130px;
+}
+
+.shopbacket__area {
+  position: absolute;
+  right: -100%;
+  z-index: 3px;
+  background-color: rgba(233, 225, 236, 0.824);
+  top: 30px;
+  right: 0;
+  height: 0px;
+  width: 30vw;
+  transition: height 0.2s ease;
+  overflow: auto;
+}
+
+.shoobacket__text {
+  margin-top: 45%;
+  display: flex;
+  justify-content: center;
 }
 
 .always__in__style-row {
@@ -377,7 +402,7 @@ legend {
 }
 
 .shop__now-link {
-  color: #F4F9FC;
+  color: #F4F9FC !important;
   font-size: 14px;
   font-weight: 500;
   line-height: 27px;
@@ -569,6 +594,9 @@ legend {
 }
 
 .stars {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
   padding: 0 35px 30px;
 }
 
@@ -592,6 +620,20 @@ legend {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.buy__btn {
+  color: white;
+  border: rgb(3, 3, 3) 1.5px solid;
+  border-radius: 10%;
+  padding: 0 20px;
+  background-color: rgb(211, 211, 211);
+  transition: all 1s ease;
+}
+
+.buy__btn:hover {
+  background-color: white;
+  color: black;
 }
 
 .new__shop-above {

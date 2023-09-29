@@ -24,6 +24,7 @@
 
 
 .shops {
+	position: relative;
 	display: flex;
 	gap:30px;
 	align-items: center;
@@ -73,6 +74,7 @@
 	margin-bottom: 35px;
 }
 .header__btn {
+	color: white;
 	display: flex;
 	gap:30px;
 	align-items: center;
@@ -108,4 +110,25 @@
 }
 .header{
 	margin-bottom: 130px;
+}
+
+.shop__backet{
+}
+
+.shopbacket__area{
+	position: absolute;
+	right: -100%;
+	z-index: 3px;
+	background-color: rgba(233, 225, 236, 0.824);
+	top:30px;
+	right:0;
+	height: 0px;
+	width:30vw;
+	transition: height 0.2s ease;
+	overflow: auto;
+}
+.shoobacket__text{
+	margin-top:45%;
+	display: flex;
+	justify-content: center;
 }
