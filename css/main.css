@@ -317,6 +317,50 @@ legend {
   justify-content: center;
 }
 
+.buy__item-backet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgb(110, 110, 110);
+}
+
+.price-wrapper__backet {
+  display: flex;
+}
+
+.shopbacket__btn {
+  color: White;
+  padding: 5px 10px;
+  background-color: #247CC0;
+}
+
+.shopbacket__buy {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 30px;
+  left: 80%;
+  right: 0;
+  bottom: -20%;
+  padding: 5px 10px;
+}
+
+.profile {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.profile__buys {
+  margin-top: 20px;
+  height: 1000px;
+  width: 100%;
+  border: 1px solid black;
+}
+
 .always__in__style-row {
   display: flex;
   justify-content: center;
