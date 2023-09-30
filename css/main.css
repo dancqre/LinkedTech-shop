@@ -317,6 +317,12 @@ legend {
   justify-content: center;
 }
 
+.shoobacket__text-buy {
+  margin-top: 45%;
+  display: flex;
+  justify-content: center;
+}
+
 .buy__item-backet {
   display: flex;
   align-items: center;
@@ -343,6 +349,50 @@ legend {
   right: 0;
   bottom: -20%;
   padding: 5px 10px;
+}
+
+.profile__list {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid black;
+}
+
+.profile__about {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.returner {
+  display: flex;
+  gap: 10px;
+}
+
+.returner__text {
+  color: white;
+  padding: 5px 10px;
+  background: #f14d70;
+  transition: all 0.5s ease;
+  border: 2px solid black;
+}
+
+.returner__text:hover {
+  color: #f14d70;
+  background: white;
+}
+
+.profile-img {
+  height: 20px;
+  width: 20px;
+}
+
+.profile__list li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
 }
 
 .profile {

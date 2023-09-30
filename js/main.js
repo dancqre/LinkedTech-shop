@@ -46,6 +46,13 @@ const buyItemBtns = document.querySelectorAll('.buy__btn')
 const shopBacketText = document.querySelector('.shoobacket__text')
 const shopBacketBuy = document.querySelector('.shopbacket__buy')
 const shopBacketPrice = document.querySelector('.shopbacket__price')
+const shopBacketBtn = document.querySelector('.shopbacket__btn')
+const shopBacketAfterBuyText = document.querySelector('.shoobacket__text-buy')
+
+
+shopBacketBtn.addEventListener('click', function(){
+	shopBacketArea.innerHTML = '<div class="shoobacket__text-buy ">Thank you for your order :)</div>';
+})
 let totalShopBacketPrice = 0
 
 buyItemBtns.forEach(function (buyItemBtn) {
@@ -81,5 +88,4 @@ buyItemBtns.forEach(function (buyItemBtn) {
 	
   });
 });
-	
 	
