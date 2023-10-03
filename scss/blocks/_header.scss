@@ -210,6 +210,7 @@
 		position: relative;
 		cursor: pointer;
 		z-index: 5;
+		order: 1;
 	}
 
 	.menu-icon span {
@@ -244,26 +245,28 @@
 		transform: rotate(45deg);
 		bottom: calc(50% - 1px);
 	}
-		.nav__menu {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			gap: 10%;
-			font-size: 30px;
-			position: absolute;
-			z-index: 3;
-			top: 0;
-			left: -100%;
-			height: 100vh;
-			width: 90%;
-			overflow: auto;
-			padding: 20px 0;
-			background-color: rgb(36, 35, 60);
-			transition: left 0.2s;
-		}
-	
-		.nav__menu._active {
-			left: 0;
-		}
+	.nav__menu {
+		color:#FFF;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10%;
+		font-size: 30px;
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: -100%;
+		height: 100vh;
+		width: 90%;
+		overflow: auto;
+		padding: 20px 0;
+		background-color: rgb(36, 35, 60);
+		transition: left 0.2s;
+		order: 1;
+	}
+
+	.nav__menu._active {
+		left: 0;
+	}
 }

@@ -395,6 +395,7 @@ legend {
     position: relative;
     cursor: pointer;
     z-index: 5;
+    order: 1;
   }
   .menu-icon span {
     transition: all 0.3s ease 0s;
@@ -424,6 +425,7 @@ legend {
     bottom: calc(50% - 1px);
   }
   .nav__menu {
+    color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -440,6 +442,7 @@ legend {
     padding: 20px 0;
     background-color: rgb(36, 35, 60);
     transition: left 0.2s;
+    order: 1;
   }
   .nav__menu._active {
     left: 0;
