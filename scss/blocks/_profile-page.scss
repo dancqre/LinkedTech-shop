@@ -1,0 +1,60 @@
+.profile__list {
+	display: flex;
+	justify-content: space-between;
+	border: 3px solid black;
+}
+
+.profile__about {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.returner {
+	display: flex;
+	gap: 10px;
+}
+
+.returner__text {
+	color: white;
+	padding: 5px 10px;
+	background: #f14d70;
+	transition: all 0.5s ease;
+	border: 2px solid black;
+}
+
+.returner__text:hover {
+	color: #f14d70;
+	background: white;
+}
+
+.profile-img {
+	height: 20px;
+	width: 20px;
+}
+
+.profile__list li {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	text-align: center;
+	margin: 10px;
+}
+
+.profile {
+	margin-top: 10%;
+	margin-bottom: 2%;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+
+}
+
+.profile__buys {
+	margin-top: 20px;
+	height: 1000px;
+	width: 100%;
+	border: 1px solid black;
+}
