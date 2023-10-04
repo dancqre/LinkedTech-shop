@@ -826,8 +826,13 @@ legend {
     flex-basis: 80.33%;
   }
   .img__item {
-    height: clamp(11.875rem, 10.511rem + 6.82vw, 15.625rem) !important;
-    width: clamp(11.875rem, 10.511rem + 6.82vw, 15.625rem) !important;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .buy__item-img {
+    height: clamp(11.875rem, 10.511rem + 6.82vw, 15.625rem);
+    width: clamp(11.875rem, 10.511rem + 6.82vw, 15.625rem);
   }
   .filter-li {
     display: flex;
