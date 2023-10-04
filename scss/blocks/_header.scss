@@ -47,7 +47,7 @@
 }
 
 .header__about-top {
-	margin-top:75px;
+	margin-top: clamp(1.875rem, 0.852rem + 5.11vw, 4.688rem);
 	@include saleText(16px);
 }
 

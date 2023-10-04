@@ -230,7 +230,7 @@ legend {
 }
 
 .header__about-top {
-  margin-top: 75px;
+  margin-top: clamp(1.875rem, 0.852rem + 5.11vw, 4.688rem);
   font-weight: 500;
   font-size: 16px;
   color: #C72535;
@@ -853,7 +853,7 @@ legend {
   display: flex;
   justify-content: center;
   color: var(--main-color);
-  font-size: 44px;
+  font-size: clamp(1.875rem, 1.557rem + 1.59vw, 2.75rem);
   font-weight: 600;
   margin-bottom: 7px;
 }
@@ -883,7 +883,7 @@ legend {
 }
 
 .gallery {
-  margin-bottom: 130px;
+  margin-bottom: clamp(3.75rem, 2.159rem + 7.95vw, 8.125rem);
 }
 
 .gallery__swiper {
@@ -911,6 +911,21 @@ legend {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .gallery_wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .gallery__img-advantages {
+    max-width: 500px;
+  }
+  .new__shop-title {
+    display: flex;
+    text-align: center;
+  }
+}
 .contact {
   background: var(--e-6-edf-2, #F4F9FC);
 }
@@ -953,14 +968,14 @@ legend {
 }
 
 .sumbit__btn {
-  padding: 13px 26px 14px 27px;
+  padding: 13px clamp(1.125rem, 0.92rem + 1.02vw, 1.688rem) 14px clamp(1.125rem, 0.92rem + 1.02vw, 1.688rem);
   background: #247CC0;
   color: white;
   text-transform: uppercase;
 }
 
 .subcribe__form__input {
-  padding: 15px 162px 14px 26px;
+  padding: 15px clamp(3.75rem, 1.432rem + 11.59vw, 10.125rem) 14px 26px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -984,6 +999,16 @@ legend {
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  .contact__wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .form__contact {
+    flex-direction: column;
+  }
+}
 .footer {
   background: #030D15;
   color: white;
@@ -1036,6 +1061,40 @@ legend {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+  .footer__wrapper * {
+    flex-basis: 100.33%;
+  }
+  .footer__wrapper ul {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(0.438rem, 0.233rem + 1.02vw, 1rem);
+  }
+  .footer__wrapper ul li {
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 5px;
+  }
+  .logo__text {
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  .sec__ul {
+    display: none !important;
+  }
+  .footer__language {
+    display: none;
+  }
+  .footer__icons {
+    flex-wrap: wrap;
+  }
+  .footer__icons li {
+    flex-basis: 30%;
+  }
+}
 .profile__list {
   display: flex;
   justify-content: space-between;

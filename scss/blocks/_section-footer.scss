@@ -60,3 +60,38 @@
 }
 
 .language__btn {}
+
+@media (max-width: 1024px){
+	.footer__wrapper{
+		flex-wrap: wrap;
+		
+	}
+	.footer__wrapper *{
+		flex-basis: calc(100.33%);
+	}
+	.footer__wrapper ul{
+		display: flex;
+		flex-direction: row;
+		font-size: clamp(0.438rem, 0.233rem + 1.02vw, 1rem);
+	}
+	.footer__wrapper ul li{
+		width: fit-content;
+		gap:5px;
+	}
+	.logo__text{
+		max-width: 500px;
+		margin-bottom:20px;
+	}
+	.sec__ul{
+		display: none !important;
+	}
+	.footer__language{
+		display: none;
+	}
+	.footer__icons{
+		flex-wrap: wrap;
+	}
+	.footer__icons li{
+		flex-basis: calc(30%);
+	}
+}

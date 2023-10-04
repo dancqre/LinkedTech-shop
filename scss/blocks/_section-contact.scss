@@ -34,13 +34,13 @@
 	padding-bottom: 100px;
 }
 .sumbit__btn {
-	padding: 13px 26px 14px 27px;
+	padding: 13px clamp(1.125rem, 0.92rem + 1.02vw, 1.688rem) 14px clamp(1.125rem, 0.92rem + 1.02vw, 1.688rem);
 	background: #247CC0;
 	color: white;
 	text-transform: uppercase;
 }
 .subcribe__form__input {
-	padding: 15px 162px 14px 26px;
+	padding: 15px clamp(3.75rem, 1.432rem + 11.59vw, 10.125rem) 14px 26px;
 	border: 1px solid rgba(0, 0, 0, 0.10)
 }
 
@@ -54,4 +54,15 @@
 .form__contact {
 	display: flex;
 
+}
+@media (max-width: 1024px){
+	.contact__wrapper{
+		flex-direction: column;
+	}
+}
+@media (max-width:500px){
+	.form__contact{
+		flex-direction: column;
+		
+	}
 }

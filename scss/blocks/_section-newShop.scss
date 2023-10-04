@@ -13,7 +13,7 @@
 	justify-content: center;
 
 	color: var(--main-color);
-	font-size: 44px;
+	font-size: clamp(1.875rem, 1.557rem + 1.59vw, 2.75rem);
 	font-weight: 600;
 
 	margin-bottom: 7px;
@@ -47,7 +47,7 @@
 }
 
 .gallery{
-	margin-bottom: 130px;
+	margin-bottom: clamp(3.75rem, 2.159rem + 7.95vw, 8.125rem);
 }
 .gallery__swiper{
 	display: flex;
@@ -68,4 +68,19 @@
 	margin-top:30px;
 	display: flex;
 	text-align: center;
+}
+@media (max-width: 1024px){
+	.gallery_wrapper{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.gallery__img-advantages{
+		max-width: 500px;
+	}
+	.new__shop-title{
+		display: flex;
+		text-align: center;
+	}
 }
