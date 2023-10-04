@@ -192,7 +192,7 @@ legend {
 }
 .header__nav {
   padding-top: 32px;
-  margin-bottom: 85px;
+  margin-bottom: clamp(1.25rem, -0.227rem + 7.39vw, 5.313rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -240,7 +240,7 @@ legend {
 
 .header__title {
   color: var(--main-color);
-  font-size: 61px;
+  font-size: clamp(2.813rem, 2.449rem + 1.82vw, 3.813rem);
   font-weight: 400;
   line-height: 73.2px;
   max-width: 555px;
@@ -597,7 +597,7 @@ legend {
 }
 
 .description:first-child {
-  padding-top: 85px;
+  padding-top: clamp(1.25rem, -0.227rem + 7.39vw, 5.313rem);
 }
 
 .description + * {
@@ -651,12 +651,6 @@ legend {
   .description {
     max-width: 600px;
   }
-  .always__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
   .always__in__style-about {
     padding: 5px;
   }
@@ -669,6 +663,14 @@ legend {
   }
   .shop__now-title {
     font-size: clamp(1.25rem, 1rem + 1.25vw, 1.938rem);
+  }
+}
+@media (max-width: 600px) {
+  .always__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 .new__product-about {
@@ -693,7 +695,7 @@ legend {
 .filter__list {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: clamp(0.938rem, 0.369rem + 2.84vw, 2.5rem);
   color: var(--main-color);
   font-size: 14px;
   font-weight: 500;
@@ -807,6 +809,31 @@ legend {
   color: black;
 }
 
+@media (max-width: 1030px) {
+  .items__grid {
+    justify-content: center;
+  }
+  .buy__item {
+    flex-basis: 45.33%;
+  }
+  .popular__title {
+    justify-content: center;
+    font-size: clamp(1.875rem, 1.557rem + 1.59vw, 2.75rem);
+  }
+}
+@media (max-width: 690px) {
+  .buy__item {
+    flex-basis: 80.33%;
+  }
+  .img__item {
+    height: clamp(11.875rem, 10.511rem + 6.82vw, 15.625rem) !important;
+    width: clamp(11.875rem, 10.511rem + 6.82vw, 15.625rem) !important;
+  }
+  .filter-li {
+    display: flex;
+    text-align: center;
+  }
+}
 .new__shop-above {
   display: flex;
   justify-content: center;

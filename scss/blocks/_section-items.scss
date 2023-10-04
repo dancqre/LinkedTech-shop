@@ -18,7 +18,7 @@
 .filter__list {
 	display: flex;
 	justify-content: center;
-	gap: 40px;
+	gap: clamp(0.938rem, 0.369rem + 2.84vw, 2.5rem);
 
 	color: var(--main-color);
 	font-size: 14px;
@@ -122,4 +122,30 @@
 .buy__btn:hover{
 	background-color: white;
 	color:  black;
+}
+
+@media (max-width: 1030px){
+	.items__grid{
+		justify-content: center;
+	}
+	.buy__item {
+		flex-basis: calc(45.33%)
+	}
+	.popular__title{
+		justify-content: center;
+		font-size: clamp(1.875rem, 1.557rem + 1.59vw, 2.75rem);
+	}
+}
+@media (max-width: 690px) {
+	.buy__item {
+			flex-basis: calc(80.33%)
+	}
+	.img__item {
+		height: clamp(11.875rem, 10.511rem + 6.82vw, 15.625rem) !important;
+		width: clamp(11.875rem, 10.511rem + 6.82vw, 15.625rem) !important;
+	}
+	.filter-li{
+		display: flex;
+		text-align: center;
+	}
 }
